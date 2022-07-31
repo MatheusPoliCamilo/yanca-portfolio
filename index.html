@@ -1,28 +1,83 @@
 <!doctype html>
 <html>
 <head>
+  <style>
+    strong {
+      color: #E91D63;
+      font-weight: normal !important;
+    }
+
+    @font-face { 
+      font-family: Poly;
+      src: url('poly-regular.ttf');
+    }
+
+    @font-face { 
+      font-family: Ruluko;
+      src: url('ruluko-regular.ttf');
+    }
+
+    body {
+      font-family: Poly;
+    }
+  </style>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-          'nav': ['Comic Sans']
-        }
-      }
-    }
-  </script>
 </head>
 <body>
   <nav class="h-20 text-white font-nav flex" style="background-color: #E91D63;">
     <img src="flower.svg" alt="Flower" class="absolute mt-6" style="margin-left: 30rem;">
-    <ul class="flex border-b-2 border-white/50 text-xl h-7 mt-9" style="width: 26rem; margin-left: 66rem;">
+    <ul class="flex border-b-2 border-white/50 text-xl h-7 mt-9" style="width: 27.2rem; margin-left: 66rem;">
       <li class="mr-16"><a href="#">Início</a></li>
       <li class="mr-16"><a href="#">Sobre</a></li>
       <li class="mr-16"><a href="#">Projetos</a></li>
       <li class="mr-16"><a href="#">Contato</a></li>
     </ul>
   </nav>
+
+  <main class="">
+    <div class="flex justify-center mt-56">
+      <section class="flex" style="max-width: 69rem;">
+        <div class="mr-10 flex">
+          <img src="selfie.svg" alt="Profile picture" class="h-full z-10">
+          <img src="rectangle.svg" alt="Pink rectangle" class="absolute mt-24">
+        </div>
+  
+        <div>
+          <div class="flex mb-7">
+            <img src="sakura.svg" alt="Sakura flower" class="mr-3.5">
+            <h1 class="text-gray-600 drop-shadow-2xl" style="font-size: 40px;">
+              Sobre
+            </h1>
+          </div>
+  
+          <div class="text-black/40" style="font-size: 22px; font-family: Ruluko;">
+            <p>
+              Graduada em <strong>Design Gráfico</strong> pela UNIVALI - 
+              Universidade do Vale do Itajaí.
+            </p>
+            <br>
+            <p>
+              Experiência no <strong>desenvolvimento de comunicação visual</strong>
+              , conteúdo para mídias sociais e produção gráfica (outdoor, panfleto, 
+              banner, cartão de visita, etc). Principais programas: Adobe 
+              Illustrator e Adobe Photoshop.
+            </p>
+            <br>
+            <p>
+              <strong>Interesse em UI Design</strong>, desenvolvendo projetos no 
+              Figma.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="flex justify-center">
+      <hr class="mt-16 h-1 border-none opacity-40" style="width: 69rem; color: #FF8E8E; background-color: #FF8E8E;">
+    </div>
+  </main>
 </body>
 </html>
