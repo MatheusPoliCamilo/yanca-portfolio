@@ -27,13 +27,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <nav class="h-20 text-white font-nav flex" style="background-color: #E91D63;">
+  <nav class="h-20 text-white font-nav flex sticky top-0 z-10" style="background-color: #E91D63;">
     <img src="flower.svg" alt="Flower" class="absolute mt-6" style="margin-left: 30rem;">
     <ul class="flex border-b-2 border-white/50 text-xl h-7 mt-9" style="width: 27.2rem; margin-left: 66rem;">
       <li class="mr-16"><a href="#">Início</a></li>
       <li class="mr-16"><a href="#about">Sobre</a></li>
-      <li class="mr-16"><a href="#">Projetos</a></li>
-      <li class="mr-16"><a href="#">Contato</a></li>
+      <li class="mr-16"><a href="#projects">Projetos</a></li>
+      <li class="mr-16"><a href="#contact">Contato</a></li>
     </ul>
   </nav>
 
@@ -86,7 +86,7 @@
 
     <div class="flex justify-center mt-24">
       <section style="max-width: 69rem;">
-        <div class="flex mb-7">
+        <div class="flex mb-7" id="projects">
           <img src="sakura.svg" alt="Sakura flower" class="mr-3.5">
           <h1 class="text-gray-600 drop-shadow-2xl" style="font-size: 40px;">
             Projetos
@@ -132,7 +132,7 @@
 
     <div class="flex justify-center mt-24">
       <section style="width: 69rem; max-width: 69rem;">
-        <div class="flex mb-7">
+        <div class="flex mb-7" id="contact">
           <img src="sakura.svg" alt="Sakura flower" class="mr-3.5">
           <h1 class="text-gray-600 drop-shadow-2xl" style="font-size: 40px;">
             Contato
